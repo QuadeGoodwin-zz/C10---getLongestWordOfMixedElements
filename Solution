@@ -1,0 +1,11 @@
+function getLongestWordOfMixedElements(arr) {
+  var max = '';
+   for (x=0; x < arr.length; x++){
+     if (arr[x].length > max.length){
+       max = arr[x];
+     }
+   }   
+  return(max);
+}
+output = getLongestWordOfMixedElements(['str', 'word', 5, 'up', 3, 1]);
+console.log(output);
